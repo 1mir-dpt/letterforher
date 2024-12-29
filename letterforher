@@ -54,6 +54,8 @@
         <button id="nextButton">Next</button>
 
     <script>
+const button = document.getElementById('revealButton');
+        const confessionText = document.getElementById('confessionText');
        // Event listener untuk butang
         document.getElementById("nextButton").addEventListener("click", function () {
             // Masuk ke halaman lain

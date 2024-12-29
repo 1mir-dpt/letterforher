@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Next</title>
+</head>
+<body>
+    <h1>Hi, ada sesuatu yang nak saya bagitahu.</h1>
+    <button id="nextButton">Next</button>
+
+    <script>
+        // Event listener untuk butang
+        document.getElementById("nextButton").addEventListener("click", function () {
+            // Masuk ke halaman lain
+            window.location.href = "page2.html";
+        });
+    </script>
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+function PageOne() {
+    const navigate = useNavigate();
+
+    return (
+        <div>
+            <h1>Halaman Pertama</h1>
+            <button onClick={() => navigate("/page2")}>Next</button>
+        </div>
+    );
+}
+
+export default PageOne;
+</body>
+</html>
